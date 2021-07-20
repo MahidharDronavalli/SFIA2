@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {{ title }}
+        </title>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+        </style>
+    </head>
+    <body style="text-align: center;">
+        <h2>Random Meal Generator</h2>
+        <p>Not sure what to eat?</p>
+        <p>We'll choose for you:</p>
+        <p>{{ display }}</p>
+        <p>Not happy with this option?</p>
+        <p>Click the button below to generate a new meal!</p>
+        <br>
+        <button onClick="window.location.reload();">Generate</button>
+        <br>
+        <h3>Why not choose from some previously generated meals?</h3>
+        <table style="margin-left:auto;margin-right:auto;">
+            <tr>
+                <th>ID</th>
+                <th>Cuisine</th>
+                <th>Dessert</th>
+            </tr>
+            {% for c in chow %}
+            <tr>
+                <td>{{ c.id }}</td>
+                <td>{{ c.cuisine }}</td>
+                <td>{{ c.dessert }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html> 
