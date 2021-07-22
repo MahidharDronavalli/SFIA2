@@ -21,7 +21,7 @@ services:
     deploy:
       replicas: 3
   service1:
-    image: jortuk/service_1:latest
+    image: MahidharDronavalli/service_1:latest
     build: ./service_1
     ports:
     - target: 5001
@@ -35,7 +35,7 @@ services:
     deploy:
       replicas: 3
   service2:
-    image: jortuk/service_2:latest
+    image: MahidharDronavalli/service_2:latest
     build: ./service_2
     ports:
     - target: 5002
@@ -49,7 +49,7 @@ services:
     deploy:
       replicas: 3
   service3:
-    image: jortuk/service_3:latest
+    image: MahidharDronavalli/service_3:latest
     build: ./service_3
     ports:
     - target: 5003
@@ -63,7 +63,7 @@ services:
     deploy:
       replicas: 3
   service4:
-    image: jortuk/service_4:latest
+    image: MahidharDronavalli/service_4:latest
     build: ./service_4
     ports:
     - target: 5004
